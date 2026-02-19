@@ -11,3 +11,24 @@ Recent internal audits revealed a significant discrepancy between "Shipped" and 
 "We are seeing a trend where nearly 15% of orders are marked as 'Cancelled' despite being processed by merchants. Can you analyze our sales and fulfillment data to identify the primary drivers of cancellations—be it courier performance, regional logistics delays, or specific product category issues—and recommend how we can improve our successful delivery rate?"
 
 ## Phase 1: Problem Definition
+The ultimate goal for Shop X is:
+- Optimizing fulfillment efficiency
+- Reduce order cancellations
+
+Some questions I will have in mind based on these goals are:
+- Out of 10, how efficient is the fulfillment process? Why did you rate it as such?
+- What is the current order cancellation rate? By how much are we aiming to reduce the order cancellation rate?
+
+Current problems faced by the company are:
+- Very high cancellation rate at post payment in areas like Mumbai/Bengaluru
+- Certain categories like "kurta", "western" dress suffer higher return and cancellation rates
+
+Consequences faced by ShopX from these problems are:
+- Impacts seller confidence on marketing their products on the platform
+- Increases reverse logistics cost for returns
+
+In conclusion, what we need to find out:
+- What is the root cause of the cancellation of orders?
+- What are some recommendations to prevent this?
+
+## Phase 2: Data preparation
