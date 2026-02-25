@@ -11,24 +11,38 @@ Recent internal audits revealed a significant discrepancy between "Shipped" and 
 "We are seeing a trend where nearly 15% of orders are marked as 'Cancelled' despite being processed by merchants. Can you analyze our sales and fulfillment data to identify the primary drivers of cancellations—be it courier performance, regional logistics delays, or specific product category issues—and recommend how we can improve our successful delivery rate?"
 
 ## Phase 1: Problem Definition
-The ultimate goal for Shop X is:
-- Optimizing fulfillment efficiency
-- Reduce order cancellations
-
-Some questions I will have in mind based on these goals are:
-- Out of 10, how efficient is the fulfillment process? Why did you rate it as such?
-- What is the current order cancellation rate? By how much are we aiming to reduce the order cancellation rate?
+What is the impact that cleaning and analyzing this data bring to ShopX?
+- It should help to tell ShopX how to increase fulfillment efficiency
+- It should help to tell ShopX how to reduce order cancellations
 
 Current problems faced by the company are:
 - Very high cancellation rate at post payment in areas like Mumbai/Bengaluru
 - Certain categories like "kurta", "western" dress suffer higher return and cancellation rates
 
-Consequences faced by ShopX from these problems are:
-- Impacts seller confidence on marketing their products on the platform
-- Increases reverse logistics cost for returns
+Consequences faced by ShopX from these problems if they are not solved:
+- Impacts seller confidence on marketing their products on the platform and in the long run, reduce the revenue for ShopX
+- Increases reverse logistics cost for returns, increasing cost and ultimately reducing profit for ShopX
 
 In conclusion, what we need to find out:
 - What is the root cause of the cancellation of orders?
 - What are some recommendations to prevent this?
 
-## Phase 2: Data preparation
+## Phase 2: Data preparation + Cleaning
+As I prepared the data for cleaning, I understand that each rows in this dataset represent an order in Amazon India and it provides detailed information such as when the order was made, the order status, the information of the item, the amount and quantity of the order, the city and state the order was shipping to, also any promotions the order was bought under.
+
+Check for duplicate rows:
+I first checked for any duplicate rows to remove.
+
+Check data types:
+Next, I checked the data type for all the columns to ensure they make sense to the value.
+
+Check null values:
+Then, I identified the columns that contain null values for me to clean.
+
+Cleaning process:
+I created a copy of the dataset. In this copy, I dropped the columns that do not add value to this analysis, such as columns with only 1 value (eg. currency, ship-country), incomplete data (eg. fulfilled-by) and are just not needed (eg. index, Unnamed: 22).
+Afterwhich, for those columns with null values, I fill them with standard values.
+Since the courier is the last leg of the delivery journey, if the status is missing, it would mean that the order was cancelled. Therefore I filled the missing values as "Cancelled"
+Lastly I ensured values are standard by removing unnecessary spaces and capitalized all values.
+
+Additionally, I added extra aggregate columns that will help me when visualizing these data using Power BI later.
