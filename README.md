@@ -46,3 +46,24 @@ Since the courier is the last leg of the delivery journey, if the status is miss
 Lastly I ensured values are standard by removing unnecessary spaces and capitalized all values.
 
 Additionally, I added extra aggregate columns that will help me when visualizing these data using Power BI later.
+
+## Phase 3: Data Analysis
+From analyzing the data, I saw that the 2 states of Rajasthan and Lakshadweep have unsually higher cancellation rate compared to the other states:
+![State vs cancellation rate](image.png)
+
+Diving deeper, I can see that the cancelled orders from these 2 states congregate in the Categories of Set, Kurta, Western dress.
+![Rajasthan Category vs cancellation rate](image-1.png)
+![Lakshadweep Category vs cancellation rate](image-2.png)
+
+Looking at the relationship between the fulfillment and the cancelled orders, I noticed there is a higher rate of orders cancelled which are fulfilled by merchants vs Amazon in the 2 states.
+![Fulfillment vs cancellation rate](image-3.png)
+
+It does seem to point to logistical/fulfillment bottlenecks faced by Merchants that causes higher cancellation rate.
+
+I then looked at the trend of orders cancelled by the month and compared it with the rate of promotions running for each month and noticed merchants are heavily promoting their products even when they are faced with logistical bottlenecks. It does point to merchants setting up promotions to attract customers to buy their products but as they take a longer time to fulfill the orders vs Amazon, the customers start to cancel the orders.
+![Order month vs cancellation rate](image-4.png)
+![Rajasthan Promotions vs cancellation rate](image-5.png)
+![Lakshadweep Promotions vs cancellation rate](image-6.png)
+
+## Phase 4: Data Visualization.
+
