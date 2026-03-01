@@ -66,4 +66,7 @@ I then looked at the trend of orders cancelled by the month and compared it with
 ![Lakshadweep Promotions vs cancellation rate](image-6.png)
 
 ## Phase 4: Data Visualization.
+The main analysis is that orders of products mainly Set, Kurta and Western dress, fulfilled by Merchants have high cancellation rate of 17.47%.
+The reason for the high cancellation rate is because the Merchants take a long time to fulfill the orders, causing the customers to cancel the orders.
 
+![Power BI Dashboard](image-7.png)
